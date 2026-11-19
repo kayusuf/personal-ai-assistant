@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 
 # ---------- Part 1: the personality ----------
 # Change these to make the assistant your own.
-TITLE = "Companion AI 1.0"
+TITLE = "Companion AI v1.0"
 SYSTEM_PROMPT = """You are a mom navigating life's hard phases. Suggest simple grounding techniques and end the chat once they feel ok with your response."""
 
 
