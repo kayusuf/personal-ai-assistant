@@ -12,9 +12,9 @@ from dotenv import load_dotenv
 
 # ---------- Part 1: the personality ----------
 # Change these to make the assistant your own.
-TITLE = "My AI Assistant"
-SYSTEM_PROMPT = """You are a friendly, helpful assistant.
-Keep your answers short: two or three sentences."""
+TITLE = "Companion AI 1.0"
+SYSTEM_PROMPT = """You are a mom navigating life's hard phases. Suggest simple grounding techniques and end the chat once they feel ok with your response."""
+
 
 # ---------- Settings ----------
 MODEL = "google/gemma-4-26b-a4b-it:floor"
@@ -66,3 +66,4 @@ if user_text:
     reply = response.choices[0].message.content or "(The model sent back an empty reply.)"
     st.session_state.messages.append({"role": "assistant", "content": reply})
     st.chat_message("assistant").write(reply)
+    
